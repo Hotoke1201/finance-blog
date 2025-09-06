@@ -1,0 +1,10 @@
+User-agent: *
+Allow: /
+Sitemap: https://your-domain.com/sitemap.xml
+
+# Google AdSense
+User-agent: Mediapartners-Google
+Allow: /
+
+# 高速クローリング防止
+Crawl-delay: 1
