@@ -1,10 +1,11 @@
 User-agent: *
 Allow: /
-Sitemap: https://your-domain.com/sitemap.xml
+
+Sitemap: https://bank-freeze-guide.com/sitemap.xml
 
 # Google AdSense
 User-agent: Mediapartners-Google
 Allow: /
 
-# 高速クローリング防止
+# 高速クロール防止
 Crawl-delay: 1
