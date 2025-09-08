@@ -8,21 +8,10 @@
         { "key": "X-Content-Type-Options", "value": "nosniff" },
         { "key": "X-Frame-Options", "value": "DENY" },
         { "key": "X-XSS-Protection", "value": "1; mode=block" },
-
-        /* --- 実運用向けCSP（広告/インラインJS/画像/iframe対応） --- */
-        { "key": "Content-Security-Policy", "value":
-          "default-src 'self'; \
-script-src 'self' 'unsafe-inline' https://pagead2.googlesyndication.com https://tpc.googlesyndication.com https://googleads.g.doubleclick.net; \
-style-src 'self' 'unsafe-inline'; \
-img-src 'self' data: https://pagead2.googlesyndication.com https://tpc.googlesyndication.com https://googleads.g.doubleclick.net https://px.a8.net https://www*.a8.net; \
-frame-src https://pagead2.googlesyndication.com https://tpc.googlesyndication.com https://googleads.g.doubleclick.net; \
-connect-src 'self' https://pagead2.googlesyndication.com https://googleads.g.doubleclick.net; \
-object-src 'none'; \
-base-uri 'self'; \
-frame-ancestors 'none';"
+        {
+          "key": "Content-Security-Policy",
+          "value": "default-src 'self'; script-src 'self' 'unsafe-inline' https://pagead2.googlesyndication.com https://tpc.googlesyndication.com https://googleads.g.doubleclick.net; style-src 'self' 'unsafe-inline'; img-src 'self' data: https://pagead2.googlesyndication.com https://tpc.googlesyndication.com https://googleads.g.doubleclick.net https://px.a8.net https://*.a8.net; frame-src https://pagead2.googlesyndication.com https://tpc.googlesyndication.com https://googleads.g.doubleclick.net; connect-src 'self' https://pagead2.googlesyndication.com https://googleads.g.doubleclick.net; object-src 'none'; base-uri 'self'; frame-ancestors 'none';"
         },
-
-        /* --- 推奨追加ヘッダ --- */
         { "key": "Referrer-Policy", "value": "strict-origin-when-cross-origin" },
         { "key": "Permissions-Policy", "value": "camera=(), microphone=(), geolocation=()" },
         { "key": "Strict-Transport-Security", "value": "max-age=31536000; includeSubDomains; preload" }
