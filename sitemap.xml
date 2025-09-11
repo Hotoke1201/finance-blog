@@ -4,7 +4,7 @@
   <!-- トップページ -->
   <url>
     <loc>https://bank-freeze-guide.com/</loc>
-    <lastmod>2025-09-07</lastmod>
+    <lastmod>2025-09-11</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
@@ -12,9 +12,9 @@
   <!-- プライバシーポリシー -->
   <url>
     <loc>https://bank-freeze-guide.com/privacy-policy</loc>
-    <lastmod>2025-09-07</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
+    <lastmod>2025-09-11</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
   </url>
 
 </urlset>
